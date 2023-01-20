@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Switcher</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <style>
+        body {
+          height:100px; 
+          /* border: 5px dashed black; */
+          /* padding: 100px; */
+          background-origin: border-box;
+          background-image: url("bg.png");
+          /* background: no-repeat;   */
+        }  
+        </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>Personal web page</h1>
+            <ul class="tabs">
+                <li class="tab is-active">
+                    <a data-switcher data-tab="1">Home</a>
+                </li>
+                <li class="tab">
+                    <a data-switcher data-tab="2">Project</a>
+                </li>
+                <li class="tab">
+                    <a data-switcher data-tab="3">skills</a>
+                </li>
+                <li class="tab">
+                    <a data-switcher data-tab="4">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pages">
+            <div class="page is-active" data-page="1">
+                <h2>About me</h2>
+                <br>
+                <p>Hello, my name is Mayur Gupta and I am a software developer. I have experience with HTML, CSS, and c++ and am always looking to learn new technologies.</p>
+            </div>
+            <div class="page" data-page="2">
+                <h2>Project</h2>
+                <br>
+                <ul>
+                    <li>Project 1:File Sharing Web Application</li>
+                    <li>Project 2: Vaccine Booking Mnagement System | c++/li>
+                  </ul>
+                  
+            </div>
+            <div class="page" data-page="3">
+                <h2>Skills</h2>
+                <br>
+                <ul>
+                    <li><p>Data Structures And Algorithms</p> </li>
+                    <li><p>Object Oriented Programming</p> </li>
+                    <li><p>Languages: C,C++</p> </li>
+                    <li><p>Database Management System: MySQL</p> </li>
+                    <li><p>Operating System</p> </li>
+                    </ul>
+            </div>
+            <div class="page" data-page="4">
+                <h2>Contact</h2>
+                <form>Name : <input type ="text" placeholder="enter name"</form>
+            
+          <form>contact no : <input type ="text" placeholder="enter m.no"</form>
+          <br>
+          
+            <label for="city-select">Choose a city:</label>
+  
+              <select id="pet-select">
+                  <option value="">--Please choose an option--</option>
+                  <option value="Delhi"> Delhi </option>
+                  <option value="Banglore"> Banglore </option>
+                  <option value="Patna"> Patna</option>
+                  <option value="Motihari"> Motihari </option>
+                   <option value="Rajsthan"> Rajsthan</option>
+                   </select>
+          
+          <br><br>
+        <form>feedback : <input type ="text" </form>
+
+        <br><br>
+          
+          <p>Email: mayur.kumar@krazybee.com</p>
+          <p>Phone: 09523389362</p>
+          <p>linkdln :<a href=https://www.linkedin.com/in/mayur-kumar-132b721a8/>MAYUR</a></p>
+          <p>Address: Bihar, Patna 800020</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
